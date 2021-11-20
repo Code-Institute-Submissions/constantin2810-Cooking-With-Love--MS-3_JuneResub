@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% block content %}
+ <!--Share recipes-->
+ <main>
+    <div class="container">
+      <div class="row">
+       <h1 class="text-center text-white">Share Your Recipes!</h1>
+ 
+       <p class="text-white">For sharing your recipe fill the form.</p>
+     
+      </div>
+ 
+      <div class="row">
+        <form  method="post" class="mb-3" action="{{ url_for('share-recipe') }}" enctype="multipart/form-data" >
+          <div class="row">
+            <h4 class="text-white">Details for sharing:</h4>
+ 
+            <div class="column input-field mb-3">
+             <i class="fas fa-file-signature" id="icon"></i>
+             <input type="text" class="validate" id="recipe_title" placeholder="Name" >
+             <label for="Name" class="form-label"></label>
+         </div>
+ 
+            <div class="column input-field mb-3">
+                <i class="fas fa-heading" id="icon"></i>
+                <input type="text" class="validate" id="recipe_title" placeholder="Title" >
+                <label for="Title" class="form-label"></label>
+            </div>
+ 
+            <div class="column input-field mb-3">
+                <i class="fas fa-receipt" id="icon"></i> 
+                <input type="text" class="validate" id="recipe_title" placeholder="Description" >
+                <label for="Description" class="form-label"></label>
+             </div>
+ 
+            <div class="column input-field mb-3">
+                <i class="fas fa-seedling" id="icon"></i>
+                <input type="text" class="validate" id="recipe_title" placeholder="Type: Vegan - Non-Vegan" >
+                <label for="Type" class="form-label"></label>
+            </div>
+          </div>
+          <div class="row mb-3">
+              <h2 class="text-white">Components:</h2>
+              </div>
+             <div class="row">
+               <div class="input-field mb-2">
+               <i class="fas fa-ad"id="icon" ></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Components" >
+               <label for="Components" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-list-ol" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Quantity" >
+               <label for="Quantity" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-allergies" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Alergen" >
+               <label for="Alergen" class="form-label"></label>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="input-field mb-2">
+               <i class="fas fa-ad"id="icon" ></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Components" >
+               <label for="Components" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-list-ol" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Quantity" >
+               <label for="Quantity" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-allergies" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Alergen" >
+               <label for="Alergen" class="form-label"></label>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="input-field mb-2">
+               <i class="fas fa-ad"id="icon" ></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Components" >
+               <label for="Components" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-list-ol" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Quantity" >
+               <label for="Quantity" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-allergies" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Alergen" >
+               <label for="Alergen" class="form-label"></label>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="input-field mb-2">
+               <i class="fas fa-ad"id="icon" ></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Components" >
+               <label for="Components" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-list-ol" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Quantity" >
+               <label for="Quantity" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-allergies" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Alergen" >
+               <label for="Alergen" class="form-label"></label>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="input-field mb-2">
+               <i class="fas fa-ad"id="icon" ></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Components" >
+               <label for="Components" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-list-ol" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Quantity" >
+               <label for="Quantity" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-allergies" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Alergen" >
+               <label for="Alergen" class="form-label"></label>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="input-field mb-2">
+               <i class="fas fa-ad"id="icon" ></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Components" >
+               <label for="Components" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-list-ol" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Quantity" >
+               <label for="Quantity" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-allergies" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Alergen" >
+               <label for="Alergen" class="form-label"></label>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="input-field mb-2">
+               <i class="fas fa-ad"id="icon" ></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Components" >
+               <label for="Components" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-list-ol" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Quantity" >
+               <label for="Quantity" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-allergies" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Alergen" >
+               <label for="Alergen" class="form-label"></label>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="input-field mb-2">
+               <i class="fas fa-ad"id="icon" ></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Components" >
+               <label for="Components" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-list-ol" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Quantity" >
+               <label for="Quantity" class="form-label"></label>
+             </div>
+             <div class="input-field mb-2">
+               <i class="fas fa-allergies" id="icon"></i>
+               <input type="text" class="validate" id="recipe_title" placeholder="Alergen" >
+               <label for="Alergen" class="form-label"></label>
+             </div>
+             <div class="row">
+               <h2 class="text-white">Methodology:</h2>
+               <p class="text-white">Writh the method of preparation here:</p>
+             </div>
+             <div class="form-floating">
+               <textarea class="form-control" placeholder="floatingTextarea" id="floatingTextarea"></textarea>
+               <label for="floatingTextarea" class="form-label">Writh here</label>
+             </div>
+             
+             <div id="button"><a href="thank-you.html">Share</a>
+               
+               </div>
+          </div>
+        </form>
+      </div>
+      
+      
+    </div>
+   </main>
+ 
+ <!--Footer-->
+ 
+       <div class="footer">
+ 
+         <!--Navigation link-->
+         
+          <a aria-label="facebook link" href="https://www.facebook.com" target="_blank" rel="noopener" class="me-4 text-reset"><i
+           class="fab fa-facebook-f"></i></a>
+          <a aria-label="twitter link" href="https://twitter.com" target="_blank" rel="noopener" class="me-4 text-reset"><i
+           class="fab fa-twitter"></i></a>
+          <a aria-label="google link" href="https://google.com" target="_blank" rel="noopener" class="me-4 text-reset"><i
+           class="fab fa-google"></i></a>
+          <a aria-label="instagram link" href="https://instagram.com" target="_blank" rel="noopener" class="me-4 text-reset"><i
+           class="fab fa-instagram"></i></a>
+           
+           <h4>Cooking with love © 2021</h4>
+           <h4>Site made by Constantin</h4>
+           
+       
+         </div>
+         {% endblock %}

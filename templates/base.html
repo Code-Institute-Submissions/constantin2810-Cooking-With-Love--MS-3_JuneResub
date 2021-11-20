@@ -68,6 +68,19 @@
           </div>
         </div>
       </nav>
+    
+      <section>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="row flashes flash-col flash-style">
+            <h4>{{ message }}</h4>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </section>
+
 
 <!--Jumbotron-->
 
@@ -80,6 +93,11 @@
 
         
     </div>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
 
 <!--Footer-->
 
