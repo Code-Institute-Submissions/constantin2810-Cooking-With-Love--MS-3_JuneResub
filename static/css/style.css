@@ -1,0 +1,121 @@
+/* Navbar */
+
+
+.container-fluid {
+    background-color: aquamarine;
+}
+
+.container {
+    height: 100%;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.navbar-brand img {
+    height: 100px;
+    width: 100px;
+}
+
+/* logo */
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+/* background-image styling*/
+
+body {
+    background-image: url(../static/images/cooking photo.jpg);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+    margin-top: 0;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+    position: center;
+    padding-top: 180px;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    box-shadow: inset;
+
+}
+
+.container text {
+    position: relative;
+    color: white;
+}
+
+#button {
+    text-align: center;
+    text-decoration: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    border: 2px solid;
+    background: white;
+    border-radius: 5px;
+    
+   
+}
+
+
+
+
+#icon {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 4px;
+    background-color: aquamarine;
+    color: black;
+    position: sticky;
+    bottom: 0;
+}
+
+/* credit for Log in form https://mdbootstrap.com/docs/standard/extended/login/? */
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
+
+  /* credit  for styling register form https://mdbootstrap.com/docs/standard/extended/registration/*/
+
+  .gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+  }
+  .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+  }
