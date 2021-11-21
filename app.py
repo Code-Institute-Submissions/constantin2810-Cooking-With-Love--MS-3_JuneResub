@@ -224,7 +224,7 @@ def add_recipe():
         return redirect(url_for("add_recipe"))
 
     types = mongo.db.types.find().sort("type", 1)
-    return render_template("add_recipe.html", types=types)
+    return render_template("share_recipe.html", types=types)
 
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
@@ -266,7 +266,7 @@ def all_recipes():
                 {"_id": recipe["user_id"]})["username"]
         except:
             pass
-    return render_template("all.html", recipes=recipes)
+    return render_template("all-shared-recipe.html", recipes=recipes)
 
 
 if __name__ == "__main__":
