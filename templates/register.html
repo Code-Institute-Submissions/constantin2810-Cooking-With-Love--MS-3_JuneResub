@@ -2,7 +2,7 @@
 {% block content %}
 
 <div class="title-style">
-    <h4>Log In</h4>
+    <h4>Register Now</h4>
 </div>
 
 <!--Login credit https://www.markuptag.com/login-form-design-html-in-bootstrap-5/-->
@@ -13,7 +13,7 @@
           <div class="mb-3">
               <h3>Log In</h3>
           </div>
-          <form accept="" class="shadow p-4" method="POST" action="{{ url_for('login') }}">                  
+          <form accept="" class="shadow p-4" method="POST" action="{{ url_for('register') }}">                  
               <div class="mb-3">
                   <label for="username">Email/Username</label>
                   <input type="email" class="form-control" name="username" id="username" placeholder="Username">
@@ -31,12 +31,12 @@
               <a href="#" class="float-end text-decoration-none">Reset Password</a>
 
               <div class="mb-3">
-                  <button type="submit" class="btn btn-primary">Login</button>
+                  <button type="submit" class="btn btn-primary">Register</button>
               </div>
 
               <hr>
 
-              <p class="text-center mb-0">If you have not account <a href="{{ url_for('register') }}">Register Now</a></p>
+              <p class="text-center mb-0">Alreaddy Registered? <a href="{{ url_for('login') }}">Log In Here</a></p>
               
           </form>
       </div>
