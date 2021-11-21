@@ -27,8 +27,20 @@
 
 /* background-image styling*/
 
-body {
-    background-image: url(../images/cooking.jpg);
+/*--Use media queries credit https://web.dev/optimize-css-background-images-with-media-queries/ --*/
+
+@media (max-width: 480px) {
+    .bg-image {
+        background-image: url(../images/cooking.jpg);
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .bg-image {
+        background-image: url(../images/cooking.jpg);
+
+@media (min-width: 1025px) {
+    .bg-image {
+        background-image: url(../images/cooking.jpg);
+ body {
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;

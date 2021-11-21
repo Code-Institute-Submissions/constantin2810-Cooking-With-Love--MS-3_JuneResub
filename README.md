@@ -1,4 +1,4 @@
-# [Cooking With Love]()
+# [Cooking With Love](https://cooking-with-love.herokuapp.com/)
 
 ## Contents
 1. [Summary](#summary)
@@ -229,8 +229,8 @@ echo web: python app.py > Procfile
 |IP|`0.0.0.0`|
 |PORT|`5000`|
 |SECRET_KEY|`<app secret key>`|
-|MONGO_URI|mongodb+srv://root:r00tUser@cluster0.4zi37.mongodb.net/...
-|MONGO_DBNAME|`Cooking-With-Love`|
+|MONGO_URI|mongodb+srv://constantin:281075asu@cluster0.kjzd9.mongodb.net/cookbook?retryWrites=true&w=majority
+|MONGO_DBNAME|`cookbook`|
 |S3_BUCKET|`recipe-image-repo`|
 |S3_ACCESS_KEY|`<S3 key>`|
 |S3_SECRET_ACCESS_KEY|`<S3 secret key>`|
@@ -244,6 +244,8 @@ echo web: python app.py > Procfile
 All of the recipes and images added under the usernames 'holly' and 'green' were sourced from :
 http://www.desktopcookbook.com/default.asp
 https://data-centric-cookbook.herokuapp.com/
+https://www.pexels.com/
+https://www.stockvault.net/
 
 ## <a name="acks"></a> Acknowledgements
 
