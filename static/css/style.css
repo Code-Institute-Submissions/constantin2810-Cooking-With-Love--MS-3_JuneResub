@@ -28,7 +28,7 @@
 /* background-image styling*/
 
 body {
-    background-image: url(../static/images/cooking.jpg);
+    background-image: url(../images/cooking.jpg);
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
