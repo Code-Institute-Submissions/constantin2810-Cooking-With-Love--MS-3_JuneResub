@@ -121,9 +121,9 @@ def search():
                     {"_id": recipe["user_id"]})["username"]
             except:
                 pass
-        return render_template("search.html", recipes=recipes)
+        return render_template("search-recipe.html", recipes=recipes)
 
-    return render_template("search.html")
+    return render_template("search-recipe.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
