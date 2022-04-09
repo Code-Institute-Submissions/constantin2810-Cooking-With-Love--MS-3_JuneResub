@@ -5,41 +5,40 @@
     <h4>Register Now</h4>
 </div>
 
-<!--Login credit https://www.markuptag.com/login-form-design-html-in-bootstrap-5/-->
+<!--Register credit https://www.markuptag.com/bootstrap-registration-form-with-validation/-->
 
-<div class="container mt-5">
-  <div class="row">
-      <div class="col-md-6 offset-md-3">
-          <div class="mb-3">
-              <h3>Register</h3>
-          </div>
-          <form accept="" class="shadow p-4" method="POST" action="{{ url_for('register') }}">                  
-              <div class="mb-3">
-                  <label for="username">Email/Username</label>
-                  <input type="email" class="form-control" name="username" id="username" placeholder="Username">
-              </div>
-
-              <div class="mb-3">
-                  <label for="Password">Password</label>
-                  <input type="password" class="form-control" name="password" id="Password" placeholder="Password">
-              </div>
-
-              <label class="mb-3">
-                  <input type="checkbox" name="RememberMe"> Remember Me
-              </label>
-
-              <a href="#" class="float-end text-decoration-none">Reset Password</a>
-
-              <div class="mb-3">
-                  <button type="submit" class="btn btn-primary">Register</button>
-              </div>
-
-              <hr>
-
-              <p class="text-center mb-0">Alreaddy Registered? <a href="{{ url_for('login') }}">Log In Here</a></p>
-              
-          </form>
-      </div>
-  </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-6 offset-sm-2 offset-md-3">
+            <form class="register-form">
+                <h2 class="text-center text-success">Register Now</h2>
+                <hr>
+                  <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
+                    <span class="hint alert-success">Enter you valid email id</span>
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                    <span class="hint alert-success">Password should be 8 or up chars </span>
+                  </div>
+                  <div class="form-group">
+                    <label>Re-enter Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                    <span class="hint alert-success">Re-enter same password</span>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Remember me</label>
+                  </div>
+                  <hr>
+                <button type="submit" class="btn btn-success float-right">Register</button>
+                <p class="text-center mt-2 mb-0 float-left">If you have account <a href="#" class="text-success">Sign In</a></p>
+            </form>
+        </div>
+    </div>
 </div>
+
+
   {% endblock %}
