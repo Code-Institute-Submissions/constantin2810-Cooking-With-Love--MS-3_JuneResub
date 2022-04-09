@@ -52,34 +52,22 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/share_recipe">Add Recipe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/all-shared-recipe">All recipes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/search-recipe">Search Recipe</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  
-                  <li><a class="dropdown-item" href="/register">Register</a></li>
-                  <li><a class="dropdown-item" href="/profile">Profile</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="/login">Log In</a></li>
-                  <li><a class="dropdown-item" href="/logout">Log Out</a></li>
-                </ul>
-               
-              </li>
+              <ul class="left hide-on-med-and-down">
+                <li><a href="{{ url_for('/') }}">Home</a></li>
+                <li><a href="{{ url_for('search-recipe') }}">Search Recipe</a></li>
+                <li><a href="{{ url_for('all-shared-recipes') }}">All Recipes</a></li>
+              </ul>
               
-              
+              <ul class="right hide-on-med-and-down">
+                {% if session.user %}
+                <li><a href="{{ url_for('share-recipe') }}">Add Recipe</a></li>
+                <li><a href="{{ url_for('profile', username=session['user']) }}">Your Recipes</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% else %}
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                {% endif %}
+              </ul>
             </ul>
             
 
