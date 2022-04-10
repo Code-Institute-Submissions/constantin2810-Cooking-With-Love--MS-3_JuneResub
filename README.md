@@ -78,7 +78,7 @@ It provides a database of recipes which can be searched, viewed, added to, remov
 ## <a name="skeleton"></a> Skeleton
 Please click the below link to view the wireframe mock up of the website in mobile, tablet and desktop sizing
 
-[Wireframe](/workspace/Cooking-With-Love--MS-3/wireframes/MS-3.pdf)
+[Wireframe](/wireframes/MS-3.pdf)
 
 ## <a name="surface"></a> Surface
 The intention of the website is to be clean, crisp and clear
