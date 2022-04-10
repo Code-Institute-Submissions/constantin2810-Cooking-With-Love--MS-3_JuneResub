@@ -121,7 +121,7 @@ def search():
                     {"_id": recipe["user_id"]})["username"]
             except:
                 pass
-        return render_template("search-recipe.html", recipes=recipes)
+        return render_template("search.html", recipes=recipes)
 
     return render_template("search-recipe.html")
 
@@ -221,13 +221,13 @@ def add_recipe():
         }
         mongo.db.recipes.insert_one(new_recipe)
         flash("Recipe Successfully Added")
-        return redirect(url_for("share_recipe.html"))
+        return redirect(url_for("share-recipe.html"))
 
     types = mongo.db.types.find().sort("type", 1)
-    return render_template("share_recipe.html", types=types)
+    return render_template("share-recipe.html", types=types)
 
 
-@app.route("/add_recipe//<recipe_id>", methods=["GET", "POST"])
+@app.route("/edit-recipe//<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     if request.method == "POST":
         user = mongo.db.users.find_one({"username": session["user"]})
@@ -246,7 +246,7 @@ def edit_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     types = mongo.db.types.find().sort("type", 1)
-    return render_template("share-recipe.html", recipe=recipe, types=types)
+    return render_template("edit-recipe.html", recipe=recipe, types=types)
 
 
 @app.route("/delete_recipe/<recipe_id>")
