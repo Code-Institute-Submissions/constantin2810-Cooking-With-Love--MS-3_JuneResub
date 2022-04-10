@@ -205,7 +205,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_recipe", methods=["GET", "POST"])
+@app.route("/share-recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
         user = mongo.db.users.find_one({"username": session["user"]})
@@ -256,7 +256,7 @@ def delete_recipe(recipe_id):
     return redirect(url_for("search"))
 
 
-@app.route("/all_recipes")
+@app.route("/all-shared-recipes")
 def all_recipes():
     recipes = list(mongo.db.recipes.find())
     # if session["user"]:
